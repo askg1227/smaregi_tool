@@ -9,7 +9,7 @@ if password != "PUMA":
 
 st.set_page_config(page_title="スマレジ商品データ変換ツール", layout="centered")
 
-st.title("📦 スマレジ商品データ 自動変換ツール")
+st.title("📦 商品データ 自動変換ツール")
 st.write("メーカー発注書（Excel）をアップロードすると、スマレジ用CSVに自動変換します。")
 
 uploaded_file = st.file_uploader("メーカー発注書（Excel）をアップロード", type=["xlsx"])
