@@ -7,9 +7,9 @@ password = st.text_input("パスワードを入力してください", type="pas
 if password != "PUMA":
     st.stop()
 
-st.set_page_config(page_title="スマレジ商品データ変換ツール", layout="centered")
+st.set_page_config(page_title="商品データ変換ツール(PUMA)", layout="centered")
 
-st.title("📦 商品データ 自動変換ツール")
+st.title("📦 商品データ 自動変換(PUMA用)")
 st.write("メーカー発注書（Excel）をアップロードすると、スマレジ用CSVに自動変換します。")
 
 uploaded_file = st.file_uploader("メーカー発注書（Excel）をアップロード", type=["xlsx"])
