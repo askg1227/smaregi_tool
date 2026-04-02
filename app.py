@@ -4,7 +4,7 @@ import io
 
 # 🔐 パスワード認証
 password = st.text_input("パスワードを入力してください", type="password")
-if password != "PUMA":
+if password != "1234":
     st.stop()
 
 st.set_page_config(page_title="商品データ変換ツール(PUMA)", layout="centered")
