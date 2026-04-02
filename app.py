@@ -10,9 +10,9 @@ if password != "1234":
 st.set_page_config(page_title="商品データ変換ツール(PUMA)", layout="centered")
 
 st.title("📦 商品データ 自動変換(PUMA用)")
-st.write("メーカー発注書（Excel）をアップロードすると、スマレジ用CSVに自動変換します。")
+st.write("発注書（Excel）をアップロードすると、スマレジ登録用CSVに自動変換します。")
 
-uploaded_file = st.file_uploader("メーカー発注書（Excel）をアップロード", type=["xlsx"])
+uploaded_file = st.file_uploader("発注書（Excel）をアップロード", type=["xlsx"])
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file)
