@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import io
 
+# 🔐 パスワード認証
+password = st.text_input("パスワードを入力してください", type="password")
+if password != "PUMA":
+    st.stop()
+
 st.set_page_config(page_title="スマレジ商品データ変換ツール", layout="centered")
 
 st.title("📦 スマレジ商品データ 自動変換ツール")
