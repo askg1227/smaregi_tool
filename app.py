@@ -38,8 +38,8 @@ if uploaded_file is not None:
 
     out["税区分"] = 1
     out["免税区分"] = 1
-    out["グループコード"] = None
-    out["属性1: メーカー"] = None
+    out["グループコード"] = "p26fa"
+    out["属性1: メーカー"] = 3
     out["属性2: 季節"] = None
     out["属性3: シルエット"] = None
     out["部門名"] = None
